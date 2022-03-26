@@ -5,16 +5,45 @@
         <meta charset="UTF-8">
     </head>
     <body>
-        <h2>Login</h2>
-        <form action="">
-
-            Login:<br>
-            <input type="text" name="nome" id="nome"><br>
+        <h2>Sign in</h2>
+        <form>
+            Email:<br>
+            <input type="email" name="email"><br>
 
             Password:<br>
-            <input type="password" name="senha" id=""><br>
+            <input type="password" name="senha"><br><br>
 
-            <input type="button" value="Login">
+            <input type="submit" value="Sign in">
         </form>
+        
+        <h2>Sign up</h2>
+        <form>
+            Email:<br>
+            <input type="email" name="email"><br>
+
+            Password:<br>
+            <input type="password" name="password"><br>
+
+            Confirm password:<br>
+            <input type="password" name="password""><br>
+            
+            Gender:<br>
+            <!-- name deve ser o mesmo para que a funcionalidade radio funcione corretamente -->
+            <input type="radio" name="gender" value="m"> Male<br>
+            <input type="radio" name="gender" value="f"> Female<br>
+
+            <!-- Dropbox com opções de país -->
+            Country:<br>
+            <select name="country">
+                <option value="brazil">BR</option>
+                <option value="united_states">USA</option>
+                <option value="england">UK</option>
+            </select><br><br>
+
+            <input type="submit" value="Sign up">
+
+        </form>
+        
+        
     </body>
 </html>
