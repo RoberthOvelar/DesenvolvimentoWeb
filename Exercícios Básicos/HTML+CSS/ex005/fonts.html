@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Fonts and colors</title>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            body{
+                background-color: #A8E8FF;    
+                font-size: 32px;
+            }
+            .content{
+                font-size: 64px;
+            }
+            p{
+                /* Caso o browser não encontre a primeira, ele tentará a segunda e assim por diante */
+                font-family:'Courier New', Courier, monospace;
+                text-shadow: 2px 2px 2px gray;
+                /*Percebe-se que mesmo ambos os textos tendo o mesmo size, o primeiro fica maior que 
+                o segundo exatamente pelo fato do pai de ambos terem size diferente para suas fontes*/
+                font-size: 1em;
+                /*
+                px -> tamanho fixo
+                % -> tamanho relativo ao tamanho padrão do browser
+                em -> tamanho relativo ao container pai
+                */
+            }
+            .bold{
+                font-weight: bolder;
+            }
+            .italic{
+                font-style: italic;
+            }
+            .underline{
+                /*text-decoration: underline;
+                text-decoration: line-through;*/
+                text-decoration: overline;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="content">
+            <p>This is a beautiful text</p>
+        </div>
+        <p>This is a beautiful text</p>
+
+        <p class="bold">This is a beautiful bold text</p>
+
+        <p class="italic">This is a beautiful bold text</p>
+        
+        <p class="underline">This is a beautiful bold text</p>
+    </body>
+</html>
